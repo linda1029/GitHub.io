@@ -15176,7 +15176,7 @@ Statsmodels: A python module that helps to conduct statistical tests.<br>
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Like how I dropped columns unused above for the first table I did the same for the 2nd table. More specifically I dropped some race information that would confused people and stuck with using easily identifiable information.</p>
+<p>Like how I dropped columns unused above for the first table I did the same for the 2nd table. More specifically I dropped some race information that would have confused people and stuck with using easily identifiable information.</p>
 
 </div>
 </div>
@@ -15553,7 +15553,7 @@ Statsmodels: A python module that helps to conduct statistical tests.<br>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>The next thing to clean up the data was to focus on the date. Both tables were sorted by date and then further by state. To make the dates more readable I used python datetime to convert them to a date time which can be easily manipulated in the future and keeps the presentation consistent. <br>
-There were thousands of rows of data sorted by the specific date which is very difficult to understand the data on a bigger and more broad scale. To fix this I consolidated the data points by the month and summed the other values in the rows as they are all numeric and are values that are accumulated.</p>
+There were thousands of rows of data sorted by the specific date which is very difficult to understand the data on a bigger and more broad scale. It is hard to understand how time passes by just looking at the date but the month would be easier for others to understand. To fix this I consolidated the data points by the month and summed the other values in the rows as they are all numeric and are values that are accumulated.</p>
 
 </div>
 </div>
@@ -16131,7 +16131,7 @@ Aside from that, combining the datasets also added repeated data (date and state
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Finally some subtle cleaning could be done on rows that were most likely to provide no values that were correct or useful were removed. It was most likely that not enough data was able to be collected in a certain time frame that created rows of null values.</p>
+<p>Finally some subtle cleaning could be done on rows that were most likely to provide no values that were correct or useful were removed. It was most likely that not enough data was able to be collected in a certain time frame that created rows of null values. Most of this data would only skew the future data analyses and it would be best to try and fix most of it before we start visualizing.</p>
 
 </div>
 </div>
@@ -16358,7 +16358,7 @@ Aside from that, combining the datasets also added repeated data (date and state
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>For the rest of the zero values that were sparsely found throughout the set were cleaned as well. These were most likely due to small errors in data collection. I took the previous datapoint and used it fill in missing values so that the disconnect would not mess up future data analyses.</p>
+<p>For the rest of the zero values that were sparsely found throughout the set were cleaned as well. These were most likely due to small errors in data collection, for example people not correctly noting down the data or no one having data for a certiain day. I took the previous datapoint and used it fill in missing values so that the disconnect would not mess up future data analyses.</p>
 
 </div>
 </div>
@@ -16521,7 +16521,7 @@ Aside from that, combining the datasets also added repeated data (date and state
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Looking at the chart, it follows the trend of rapidly increasing total number of hospitalizations increasing sharply in November 2020 which was most likely the second wave of covid cases, as places started to open and people stopped social distancing and wearing masks too early. Thus there was a sever uptick of cases. During this time the COVID-19 virus also evolved into the Omicron variant that was even more contagious. There is a sudden dip in March of 2021 which can be attributed to the website that the data was found. The COVID Tracking Project stopped collecting data on March 7th, 2021 so the data totals are not accurate for the month.</p>
+<p>Looking at the chart, it follows the trend of rapidly increasing total number of hospitalizations increasing sharply in November 2020 which was most likely the second wave of covid cases, as places started to open and people stopped social distancing and wearing masks too early. Thus there was a sever uptick of cases. During this time the COVID-19 virus also evolved into the Omicron variant that was even more contagious. There is a sudden dip in March of 2021 which can be attributed to the website that the data was found. The COVID Tracking Project stopped collecting data on March 7th, 2021 so the data totals are not accurate for that month.</p>
 
 </div>
 </div>
@@ -16579,7 +16579,7 @@ Aside from that, combining the datasets also added repeated data (date and state
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Now after looking at the general trends over time, we can sort on a different category to see if there are any information that we can collect. Sorting by state we can look at the deaths for each and look at their trends individually for any similar or different trends.<br>
+<p>Now after looking at the general trends over time, we can sort on a different category to see if there are any information that we can collect. Sorting by state we can look at the deaths for each and look at their trends individually for any similarities or differences.<br>
 Looking at the bar graph, the highest peak is at NI which is non identifiable state so the deaths are disproportionally high. Aside from that peak, the states with the most deaths are Floria, Massachusetts, Georgia, Arizona, Ohio, Indiana, Maryland, and Tennessee. In general these states are ones with some of the largest populations or population densities, meaning that the spread of covid is most likely more rapid and subsequently more likely to cause a larger number of deaths as well.</p>
 
 </div>
@@ -16640,7 +16640,7 @@ Looking at the bar graph, the highest peak is at NI which is non identifiable st
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Now we want to see if the states have any trends that may help to further classify the trends that can be seen in deaths. For example, does Florida have a certain trend of deaths that varies from the general death trend? <br>
-Below the data is again sorted into a smaller dataset with only certain states to make it more distinct on a graph.</p>
+Below the data is again sorted into a smaller dataset with only certain states with the highest deaths to make it more distinct on a graph. This is better than graphing all the states which would only clutter the graph and make it harder to understand anything.</p>
 
 </div>
 </div>
@@ -16847,7 +16847,7 @@ Florida stands out with an abnormally sharp increase all throughout 2020 as well
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>We have found that states may help to classify the dataset, lets look at another possible classifier, race. The dataset has data for the death rates of Whites and Blacks, which we can graph using a scatter plot to look for differences in trends. <br>
-Looking at the graph for this data below, we can see a large difference in the total number of deaths between Whites and Blacks, and more importantly different trends. The deaths for Whites follow the general trend better with a sharp increase in November 2020 for Omicron and then a dip in March 2021 due to the lack of data. But the death trend for Blacks tell a whole different story with a steady moderate increase all the way through 2020 into 2021 before the dip in March 2021 again due to lack of data. It would be really useful to run a data analysis on race in relation to deaths later on to see if race can be a classifier to better fit data that just time.</p>
+Looking at the graph for this data below, we can see a large difference in the total number of deaths between Whites and Blacks, and more importantly different trends. The deaths for Whites follow the general trend better with a sharp increase in November 2020 for Omicron and then a dip in March 2021 due to the lack of data. But the death trend for Blacks tell a whole different story with a steady moderate increase all the way through 2020 into 2021 before the dip in March 2021 again due to lack of data. It would be really useful to run a data analysis on race in relation to deaths later on to see if race can be a classifier to better fit data that just time like what we saw in the first scatter plot.</p>
 
 </div>
 </div>
@@ -16978,7 +16978,7 @@ Here I can test the hypothesis that I have developed, primarily that there is a 
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Here we calculate the linear regression line for Total hospitalizations in relation to Total Deaths. This is a line ob best fit which will give me a slope and x-intercept. Below I can see the two values printed, giving us a linear regression model of y = 8.887x + 58333.916 .</p>
+<p>Here we calculate the linear regression line for Total hospitalizations in relation to Total Deaths. This is a line of best fit which will give me a slope and x-intercept. Below I can see the two values printed, giving us a linear regression model of y = 8.887x + 58333.916 . This means that for each increase in death there is an approximate increase of 9 people hospitalized.</p>
 
 </div>
 </div>
@@ -17036,7 +17036,7 @@ Here I can test the hypothesis that I have developed, primarily that there is a 
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Here to better visualize the linear regression model in relation to the data I have again graphed the total hospitalizations in relation to total death but with the inclusion of the line of best fit which should support my hypothesis.</p>
+<p>Here to better visualize the linear regression model in relation to the data I have again graphed the total hospitalizations in relation to total death but with the inclusion of the line of best fit which should support my hypothesis. This line can also be used to predict the future number of hospitalizations given the number of deaths.</p>
 
 </div>
 </div>
@@ -17438,7 +17438,7 @@ strong multicollinearity or other numerical problems.
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Fourth, in hypothesis testing we decided to create a linear regression prediction model of hospitalizations over deaths as they had similar graphs when we looked at their data analyses. Then we also looked at the interaction of states and race in relation to the two parameters due to their unique trends that we noticed in the exploratory data analysis.</p>
+<p>Fourth, in hypothesis testing we took what we learned from the graphs and decided to create a linear regression prediction model of hospitalizations over deaths as they had similar graphs when we looked at their data analyses. Then we also looked at the interaction of states and race in relation to the two parameters due to their unique trends that we noticed in the exploratory data analysis.</p>
 
 </div>
 </div>
